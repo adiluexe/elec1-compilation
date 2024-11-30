@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.elec1compilation.guided_exercises.FirstGuidedExercise;
 import com.example.elec1compilation.guided_exercises.SecondGuidedExercise;
+import com.example.elec1compilation.guided_exercises.ThirdGuidedExercise;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         exerciseItems.add("Guided Exercises");
         exerciseItems.add(new ExerciseItem("First Guided Exercise", "Guided Exercises", FirstGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Second Guided Exercise", "Guided Exercises", SecondGuidedExercise.class));
+        exerciseItems.add(new ExerciseItem("Third Guided Exercise", "Guided Exercises", ThirdGuidedExercise.class));
         // Add more guided exercises...
 
         // Machine Problems Section
