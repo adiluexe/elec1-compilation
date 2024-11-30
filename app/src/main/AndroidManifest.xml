@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Add all other exercise activities -->
+        <activity android:name=".guided_exercises.FirstGuidedExercise" />
+
+        <!-- Continue for all exercises -->
     </application>
 
 </manifest>
