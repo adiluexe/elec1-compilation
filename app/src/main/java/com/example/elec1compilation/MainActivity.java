@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.elec1compilation.guided_exercises.FifthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.FirstGuidedExercise;
 import com.example.elec1compilation.guided_exercises.FourthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.SecondGuidedExercise;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         exerciseItems.add(new ExerciseItem("Second Guided Exercise", "Guided Exercises", SecondGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Third Guided Exercise", "Guided Exercises", ThirdGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Fourth Guided Exercise", "Guided Exercises", FourthGuidedExercise.class));
+        exerciseItems.add(new ExerciseItem("Fifth Guided Exercise", "Guided Exercises", FifthGuidedExercise.class));
         // Add more guided exercises...
 
         // Machine Problems Section

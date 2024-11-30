@@ -27,6 +27,7 @@
         <activity android:name=".guided_exercises.SecondGuidedExercise" />
         <activity android:name=".guided_exercises.ThirdGuidedExercise" />
         <activity android:name=".guided_exercises.FourthGuidedExercise" />
+        <activity android:name=".guided_exercises.FifthGuidedExercise" />
 
         <!-- Continue for all exercises -->
     </application>
