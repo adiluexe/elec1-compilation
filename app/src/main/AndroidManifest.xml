@@ -28,6 +28,7 @@
         <activity android:name=".guided_exercises.ThirdGuidedExercise" />
         <activity android:name=".guided_exercises.FourthGuidedExercise" />
         <activity android:name=".guided_exercises.FifthGuidedExercise" />
+        <activity android:name=".guided_exercises.SQLiteDatabaseDemo" />
 
         <!-- Continue for all exercises -->
     </application>
