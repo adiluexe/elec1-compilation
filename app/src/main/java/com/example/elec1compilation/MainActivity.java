@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.elec1compilation.guided_exercises.EleventhGuidedExerciseDragNDrop;
 import com.example.elec1compilation.guided_exercises.EleventhGuidedExerciseIntent;
 import com.example.elec1compilation.guided_exercises.FifthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.FirstGuidedExercise;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         exerciseItems.add(new ExerciseItem("Fifth Guided Exercise", "Guided Exercises", FifthGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Tenth Guided Exercise", "Guided Exercises", TenthGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Eleventh Guided Exercise (Intent)", "Guided Exercises", EleventhGuidedExerciseIntent.class));
+        exerciseItems.add(new ExerciseItem("Eleventh Guided Exercise (Drag and Drop)", "Guided Exercises", EleventhGuidedExerciseDragNDrop.class));
         // Add more guided exercises...
 
         // Machine Problems Section
