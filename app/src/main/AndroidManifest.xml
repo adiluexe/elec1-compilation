@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -32,8 +34,9 @@
         <activity android:name=".guided_exercises.FourthGuidedExercise" />
         <activity android:name=".guided_exercises.FifthGuidedExercise" />
         <activity android:name=".guided_exercises.TenthGuidedExercise" />
-        <activity android:name=".guided_exercises.EleventhGuidedExerciseIntent"/>
-        <activity android:name=".guided_exercises.EleventhGuidedExerciseDragNDrop"/>
+        <activity android:name=".guided_exercises.EleventhGuidedExerciseIntent" />
+        <activity android:name=".guided_exercises.EleventhGuidedExerciseDragNDrop" />
+        <activity android:name=".guided_exercises.NotificationAndBroadcastReciever" />
     </application>
 
 </manifest>
