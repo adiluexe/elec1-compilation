@@ -5,10 +5,15 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -42,6 +47,7 @@
         <activity android:name=".guided_exercises.EleventhGuidedExerciseDragNDrop" />
         <activity android:name=".guided_exercises.NotificationAndBroadcastReciever" />
         <activity android:name=".guided_exercises.EmailandCamera" />
+        <activity android:name=".guided_exercises.SMSandPhoneCall"/>
     </application>
 
 </manifest>

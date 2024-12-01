@@ -17,6 +17,7 @@ import com.example.elec1compilation.guided_exercises.FifthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.FirstGuidedExercise;
 import com.example.elec1compilation.guided_exercises.FourthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.NotificationAndBroadcastReciever;
+import com.example.elec1compilation.guided_exercises.SMSandPhoneCall;
 import com.example.elec1compilation.guided_exercises.SecondGuidedExercise;
 import com.example.elec1compilation.guided_exercises.TenthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.ThirdGuidedExercise;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         exerciseItems.add(new ExerciseItem("Eleventh Guided Exercise (Drag and Drop)", "Guided Exercises", EleventhGuidedExerciseDragNDrop.class));
         exerciseItems.add(new ExerciseItem("Twelfth Guided Exercise", "Guided Exercises", NotificationAndBroadcastReciever.class));
         exerciseItems.add(new ExerciseItem("Thirteenth Guided Exercise", "Guided Exercises", EmailandCamera.class));
+        exerciseItems.add(new ExerciseItem("Fourteenth Guided Exercise", "Guided Exercises", SMSandPhoneCall.class));
         // Add more guided exercises...
 
         // Machine Problems Section
