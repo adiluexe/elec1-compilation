@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.elec1compilation.guided_exercises.EleventhGuidedExerciseDragNDrop;
 import com.example.elec1compilation.guided_exercises.EleventhGuidedExerciseIntent;
+import com.example.elec1compilation.guided_exercises.EmailandCamera;
 import com.example.elec1compilation.guided_exercises.FifthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.FirstGuidedExercise;
 import com.example.elec1compilation.guided_exercises.FourthGuidedExercise;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         exerciseItems.add(new ExerciseItem("Eleventh Guided Exercise (Intent)", "Guided Exercises", EleventhGuidedExerciseIntent.class));
         exerciseItems.add(new ExerciseItem("Eleventh Guided Exercise (Drag and Drop)", "Guided Exercises", EleventhGuidedExerciseDragNDrop.class));
         exerciseItems.add(new ExerciseItem("Twelfth Guided Exercise", "Guided Exercises", NotificationAndBroadcastReciever.class));
+        exerciseItems.add(new ExerciseItem("Thirteenth Guided Exercise", "Guided Exercises", EmailandCamera.class));
         // Add more guided exercises...
 
         // Machine Problems Section
