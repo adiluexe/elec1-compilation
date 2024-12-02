@@ -26,17 +26,16 @@
         android:theme="@style/Theme.ELEC1Compilation"
         tools:targetApi="31">
         <activity
-            android:name=".guided_exercises.Ge11IntentResultActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".guided_exercises.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Add all other exercise activities -->
+        </activity>
+<!-- Add all other exercise activities -->
+        <activity android:name=".MainActivity" />
         <activity android:name=".guided_exercises.FirstGuidedExercise" />
         <activity android:name=".guided_exercises.SecondGuidedExercise" />
         <activity android:name=".guided_exercises.ThirdGuidedExercise" />
