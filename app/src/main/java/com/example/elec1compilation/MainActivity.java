@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.elec1compilation.guided_exercises.EighthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.EleventhGuidedExerciseDragNDrop;
 import com.example.elec1compilation.guided_exercises.EleventhGuidedExerciseIntent;
 import com.example.elec1compilation.guided_exercises.EmailandCamera;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         exerciseItems.add(new ExerciseItem("Fifth Guided Exercise", "Guided Exercises", FifthGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Sixth Guided Exercise", "Guided Exercises", SixthGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Seventh Guided Exercise", "Guided Exercises", SeventhGuidedExercise.class));
+        exerciseItems.add(new ExerciseItem("Eighth Guided Exercise", "Guided Exercises", EighthGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Ninth Guided Exercise", "Guided Exercises", NinthGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Tenth Guided Exercise", "Guided Exercises", TenthGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Eleventh Guided Exercise (Intent)", "Guided Exercises", EleventhGuidedExerciseIntent.class));
