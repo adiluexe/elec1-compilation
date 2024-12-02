@@ -42,6 +42,7 @@
         <activity android:name=".guided_exercises.ThirdGuidedExercise" />
         <activity android:name=".guided_exercises.FourthGuidedExercise" />
         <activity android:name=".guided_exercises.FifthGuidedExercise" />
+        <activity android:name=".guided_exercises.SixthGuidedExercise" />
         <activity android:name=".guided_exercises.TenthGuidedExercise" />
         <activity android:name=".guided_exercises.EleventhGuidedExerciseIntent" />
         <activity android:name=".guided_exercises.EleventhGuidedExerciseDragNDrop" />
@@ -49,7 +50,7 @@
         <activity android:name=".guided_exercises.EmailandCamera" />
         <activity android:name=".guided_exercises.SMSandPhoneCall" />
         <activity android:name=".machine_problems.Calculator" />
-        <activity android:name=".machine_problems.CCJitters"/>
+        <activity android:name=".machine_problems.CCJitters" />
     </application>
 
 </manifest>
