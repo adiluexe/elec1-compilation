@@ -34,8 +34,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!-- Add all other exercise activities -->
+        <!-- Add all other exercise activities -->
         <activity android:name=".MainActivity" />
+        <!-- GUIDED EXERCISES -->
         <activity android:name=".guided_exercises.FirstGuidedExercise" />
         <activity android:name=".guided_exercises.SecondGuidedExercise" />
         <activity android:name=".guided_exercises.ThirdGuidedExercise" />
@@ -51,8 +52,12 @@
         <activity android:name=".guided_exercises.NotificationAndBroadcastReciever" />
         <activity android:name=".guided_exercises.EmailandCamera" />
         <activity android:name=".guided_exercises.SMSandPhoneCall" />
+        <activity android:name=".guided_exercises.SQLiteDatabaseDemo"  />
+        <!-- MACHINE PROBLEMS -->
         <activity android:name=".machine_problems.Calculator" />
         <activity android:name=".machine_problems.CCJitters" />
+        <activity android:name=".machine_problems.SemestralGradeComputation" />
+
     </application>
 
 </manifest>

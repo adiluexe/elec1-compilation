@@ -20,13 +20,16 @@ import com.example.elec1compilation.guided_exercises.FourthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.NinthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.NotificationAndBroadcastReciever;
 import com.example.elec1compilation.guided_exercises.SMSandPhoneCall;
+import com.example.elec1compilation.guided_exercises.SQLiteDatabaseDemo;
 import com.example.elec1compilation.guided_exercises.SecondGuidedExercise;
 import com.example.elec1compilation.guided_exercises.SeventhGuidedExercise;
 import com.example.elec1compilation.guided_exercises.SixthGuidedExercise;
+import com.example.elec1compilation.guided_exercises.SplashScreen;
 import com.example.elec1compilation.guided_exercises.TenthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.ThirdGuidedExercise;
 import com.example.elec1compilation.machine_problems.CCJitters;
 import com.example.elec1compilation.machine_problems.Calculator;
+import com.example.elec1compilation.machine_problems.SemestralGradeComputation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,13 +63,16 @@ public class MainActivity extends AppCompatActivity {
         exerciseItems.add(new ExerciseItem("Twelfth Guided Exercise", "Guided Exercises", NotificationAndBroadcastReciever.class));
         exerciseItems.add(new ExerciseItem("Thirteenth Guided Exercise", "Guided Exercises", EmailandCamera.class));
         exerciseItems.add(new ExerciseItem("Fourteenth Guided Exercise", "Guided Exercises", SMSandPhoneCall.class));
+        exerciseItems.add(new ExerciseItem("SQLiteDatabaseDemo Guided Exercise", "Guided Exercises", SQLiteDatabaseDemo.class));
+        exerciseItems.add(new ExerciseItem("SplashScreen Guided Exercise", "Guided Exercises", SplashScreen.class));
         // Add more guided exercises...
 
         // Machine Problems Section
         exerciseItems.add("Machine Problems");
-        exerciseItems.add(new ExerciseItem("Calculator", "Machine Problems", Calculator.class));
-        exerciseItems.add(new ExerciseItem("Third Machine Problem (CCJitters)", "Machine Problems", CCJitters.class));
-//        exerciseItems.add(new ExerciseItem("Calculator", "Machine Problem", DataProcessingActivity.class));
+        exerciseItems.add(new ExerciseItem("Machine Problem 2 (Calculator)", "Machine Problems", Calculator.class));
+        exerciseItems.add(new ExerciseItem("Machine Problem 3 Batch 1 (SemestralGradeComputation)", "Machine Problems", SemestralGradeComputation.class));
+        exerciseItems.add(new ExerciseItem("Machine Problem 3 Batch 2 (CCJitters)", "Machine Problems", CCJitters.class));
+
 
         // Add more machine problems...
 
