@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewCCjitters"
+        android:layout_width="117dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="21dp"
+        android:text="CC Jitters"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFrappuccino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFrappuccino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="10dp"
+        android:text="Frappuccino"
+        app:layout_constraintBottom_toTopOf="@+id/cbCVF"
+        app:layout_constraintStart_toStartOf="@+id/cbCVF" />
+
+    <TextView
+        android:id="@+id/textViewDiscount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="59dp"
+        android:text="Discount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCCjitters" />
+
+    <CheckBox
+        android:id="@+id/cbCVF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="59dp"
+        android:text="Caffe Vanilla Frappuccino"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbSF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S'mores Frappuccino"
+        app:layout_constraintStart_toStartOf="@+id/cbGTCF"
+        app:layout_constraintTop_toBottomOf="@+id/cbGTCF" />
+
+    <CheckBox
+        android:id="@+id/cbGTCF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green Tea Creme Frappuccino"
+        app:layout_constraintStart_toStartOf="@+id/cbCVF"
+        app:layout_constraintTop_toBottomOf="@+id/cbCVF" />
+
+    <CheckBox
+        android:id="@+id/cbMF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mocha Frappuccino"
+        app:layout_constraintStart_toStartOf="@+id/cbSF"
+        app:layout_constraintTop_toBottomOf="@+id/cbSF" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSubtotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cbCVF"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCCjitters">
+
+        <RadioButton
+            android:id="@+id/rb5Disc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5%" />
+
+        <RadioButton
+            android:id="@+id/rb10Disc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10%" />
+
+        <RadioButton
+            android:id="@+id/rb15Disc"
+            android:layout_width="112dp"
+            android:layout_height="49dp"
+            android:text="15%" />
+
+        <RadioButton
+            android:id="@+id/rbNoDisc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Discount" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Sub-Total:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvSubtotal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:text="0.00"
+        app:layout_constraintStart_toEndOf="@+id/cbMF"
+        app:layout_constraintTop_toBottomOf="@+id/cbMF" />
+
+    <TextView
+        android:id="@+id/textViewDiscount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="Discount:"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNetAmount"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="0.00"
+        app:layout_constraintStart_toStartOf="@+id/tvSubtotal"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtotal" />
+
+    <TextView
+        android:id="@+id/textViewNetAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Net Amount:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvNetAmount"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNetAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="42dp"
+        android:text="0.00"
+        app:layout_constraintStart_toStartOf="@+id/tvDiscount"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiscount" />
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="109dp"
+        android:text="COMPUTE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvNetAmount"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnClearAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="108dp"
+        android:text="CLEAR ALL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

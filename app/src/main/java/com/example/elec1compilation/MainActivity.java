@@ -21,6 +21,7 @@ import com.example.elec1compilation.guided_exercises.SMSandPhoneCall;
 import com.example.elec1compilation.guided_exercises.SecondGuidedExercise;
 import com.example.elec1compilation.guided_exercises.TenthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.ThirdGuidedExercise;
+import com.example.elec1compilation.machine_problems.CCJitters;
 import com.example.elec1compilation.machine_problems.Calculator;
 
 import java.util.ArrayList;
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         // Machine Problems Section
         exerciseItems.add("Machine Problems");
         exerciseItems.add(new ExerciseItem("Calculator", "Machine Problems", Calculator.class));
+        exerciseItems.add(new ExerciseItem("Third Machine Problem (CCJitters)", "Machine Problems", CCJitters.class));
 //        exerciseItems.add(new ExerciseItem("Calculator", "Machine Problem", DataProcessingActivity.class));
 
         // Add more machine problems...
