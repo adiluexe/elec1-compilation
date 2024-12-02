@@ -19,6 +19,7 @@ import com.example.elec1compilation.guided_exercises.FourthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.NotificationAndBroadcastReciever;
 import com.example.elec1compilation.guided_exercises.SMSandPhoneCall;
 import com.example.elec1compilation.guided_exercises.SecondGuidedExercise;
+import com.example.elec1compilation.guided_exercises.SeventhGuidedExercise;
 import com.example.elec1compilation.guided_exercises.SixthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.TenthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.ThirdGuidedExercise;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         exerciseItems.add(new ExerciseItem("Fourth Guided Exercise", "Guided Exercises", FourthGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Fifth Guided Exercise", "Guided Exercises", FifthGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Sixth Guided Exercise", "Guided Exercises", SixthGuidedExercise.class));
+        exerciseItems.add(new ExerciseItem("Seventh Guided Exercise", "Guided Exercises", SeventhGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Tenth Guided Exercise", "Guided Exercises", TenthGuidedExercise.class));
         exerciseItems.add(new ExerciseItem("Eleventh Guided Exercise (Intent)", "Guided Exercises", EleventhGuidedExerciseIntent.class));
         exerciseItems.add(new ExerciseItem("Eleventh Guided Exercise (Drag and Drop)", "Guided Exercises", EleventhGuidedExerciseDragNDrop.class));
