@@ -29,6 +29,7 @@ import com.example.elec1compilation.guided_exercises.TenthGuidedExercise;
 import com.example.elec1compilation.guided_exercises.ThirdGuidedExercise;
 import com.example.elec1compilation.machine_problems.CCJitters;
 import com.example.elec1compilation.machine_problems.Calculator;
+import com.example.elec1compilation.machine_problems.EmployeePayrollComputation;
 import com.example.elec1compilation.machine_problems.SemestralGradeComputation;
 
 import java.util.ArrayList;
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         exerciseItems.add(new ExerciseItem("Machine Problem 2 (Calculator)", "Machine Problems", Calculator.class));
         exerciseItems.add(new ExerciseItem("Machine Problem 3 Batch 1 (SemestralGradeComputation)", "Machine Problems", SemestralGradeComputation.class));
         exerciseItems.add(new ExerciseItem("Machine Problem 3 Batch 2 (CCJitters)", "Machine Problems", CCJitters.class));
-
+        exerciseItems.add(new ExerciseItem("Machine Problem 4 Batch (EmployeePayrollComputation)", "Machine Problems", EmployeePayrollComputation.class));
 
         // Add more machine problems...
 

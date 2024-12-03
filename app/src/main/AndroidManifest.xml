@@ -57,6 +57,8 @@
         <activity android:name=".machine_problems.Calculator" />
         <activity android:name=".machine_problems.CCJitters" />
         <activity android:name=".machine_problems.SemestralGradeComputation" />
+        <activity android:name=".machine_problems.EmployeePayrollComputation" />
+        <activity android:name=".machine_problems.SummaryActivity" />
 
     </application>
 
