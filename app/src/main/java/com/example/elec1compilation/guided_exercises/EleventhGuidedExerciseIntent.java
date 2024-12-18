@@ -16,11 +16,7 @@ import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.elec1compilation.R;
 
@@ -32,10 +28,6 @@ public class EleventhGuidedExerciseIntent extends AppCompatActivity {
     Spinner job;
     ListView thesis;
     Button submit;
-    //An intent is an abstract description of an operation to be performed.
-    // It can be used with startActivity to launch an Activity, broadcastIntent to send it
-    // to any interested BroadcastReceiver components, and Context.startService(Intent) or
-    // Context.bindService(Intent, ServiceConnection, int) to communicate with a background Service.
     Intent intent;
     Adapter adapter;
     String[] jobList = {"Software Developer", "Software QA", "System Analyst", "Data Scientist"};
@@ -62,15 +54,23 @@ public class EleventhGuidedExerciseIntent extends AppCompatActivity {
         comprog2 = findViewById(R.id.chkComprog2GE11);
         submit = findViewById(R.id.btnSubmitGE11);
 
-        // Instantiation of intent Object
         intent = new Intent(this, Ge11IntentResultActivity.class);
 
         job = findViewById(R.id.spnrJobGE11);
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, jobList);
-        job.setAdapter((SpinnerAdapter) adapter); // type casting into SpinnerAdapter
+        job.setAdapter((SpinnerAdapter) adapter);
+
         thesis = findViewById(R.id.lvThesisGe11);
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, thesisTopics);
-        thesis.setAdapter((ListAdapter) adapter);  // type casting into ListAdapter
+        thesis.setAdapter((ListAdapter) adapter);
+        thesis.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), "You select " + thesisTopics[position],
+                        Toast.LENGTH_SHORT).show();
+                topic = thesisTopics[position];
+            }
+        });
     }
 
     public void displayResult() {
@@ -92,24 +92,19 @@ public class EleventhGuidedExerciseIntent extends AppCompatActivity {
                     return;
                 }
 
-                //putExtra() adds extended data to the intent. It has two parameters, first one
-                // specifies the name which of the extra data,and the second parameter is the data itself.
                 intent.putExtra("id_name", name.getText().toString());
                 intent.putExtra("id_age", age.getText().toString());
                 intent.putExtra("id_gender", getGender());
                 intent.putExtra("id_subjects", getSubjects());
                 intent.putExtra("id_job", jobList[job.getSelectedItemPosition()]);
                 intent.putExtra("id_thesis", getThesis());
-                //The startActivity(Intent) method is used to start a new activity,
-                // which will be placed at the top of the activity stack.
                 startActivity(intent);
             }
         });
     }
 
     public String getSubjects() {
-        subjects = ""; // to restart the value of subjects into empty string to avoid duplication
-        // check if there's a selection on favorite subjects.
+        subjects = "";
         if ((!appdet.isChecked() && !intcomp.isChecked()) &&
                 (!comprog1.isChecked() && !comprog2.isChecked())) {
         } else {
@@ -139,14 +134,6 @@ public class EleventhGuidedExerciseIntent extends AppCompatActivity {
     }
 
     public String getThesis() {
-        thesis.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), "You select " + thesisTopics[position],
-                        Toast.LENGTH_SHORT).show();
-                topic = thesisTopics[position];
-            }
-        });
         return topic;
     }
 }
